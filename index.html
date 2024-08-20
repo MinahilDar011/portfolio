@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Skill Section */
+.skill {
+    background-color: rgb(34, 65, 80);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -2px 6px -1px rgba(0, 0, 0, 0.2);
+    height: 100vh; /* Ensure section covers at least the full viewport height */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.skill h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 30px; /* Space between heading and cards */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards horizontally */
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background-color: rgb(4, 25, 36);
+    padding-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    padding-bottom: 5px;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: rgb(24, 50, 60);
+    color: #ffffff;
+    height: 83px;
+}
+
+.card-text {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 400;
+}
+
+    </style>
+</head>
+<body>
+    <section class="skill" id="skill">
+        <h2>Skills</h2> <!-- Re-added the heading here -->
+    
+        <div class="card-container"> <!-- Added a container for cards -->
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="img/html-5.png" alt="HTML">
+                <div class="card-body">
+                    <p class="card-text">The standard markup language used to create and structure content on the web.</p>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="img/css-3.png" alt="CSS">
+                <div class="card-body">
+                    <p class="card-text">Styles web pages by controlling layout, colors, fonts, and overall visual design.</p>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="img/java-script.png" alt="JavaScript">
+                <div class="card-body">
+                    <p class="card-text">Enables dynamic content, interactivity, and advanced features in web applications.</p>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="img/bootstrap.png" alt="Bootstrap">
+                <div class="card-body">
+                    <p class="card-text">Front-end framework provides responsive design, pre-built components for faster web development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
